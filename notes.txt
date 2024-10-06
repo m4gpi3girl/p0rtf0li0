@@ -1,0 +1,10 @@
+Things to add to portfolio:
+
+- dev artcle about python for calculating distances
+- code from dump - address matching with apis, fuzzy and my own logic
+- more info about portfolio analysis examples
+- examples of how to extract info from 360giving, public trusts, charity 
+commission, postcodes.io
+- examples of using postcode apis and folium to map information in python
+- my own code practices - html colour extraction, lastfm 
+- link to SIB article

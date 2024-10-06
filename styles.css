@@ -1,22 +1,128 @@
+/* General body and text styling */
 body {
-	font-family: Arial, sans-serif;
-	margin: 0;
-	padding: 0;
-	background-color: #f4f4f4;
+    font-family: Raleway, sans-serif;
+    background-color: #070214e7; /* Dark background */
+    color: #f4f5f8; /* White text for contrast */
+    margin: 0;
+    padding: 0;
 }
 
+/* Header and navigation styling */
 header {
-	background-color: #333;
-	color: white;
-	text-align: center;
-	padding: 1em 0;
+    background-color: #ff00bb; /* Pink header */
+    padding: 20px;
+    text-align: center;
 }
 
-section {
-	margin: 2em;
-	padding: 1em;
-	background-color: white;
-	border-radius: 5px;
-	box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+nav ul {
+    list-style: none;
+    padding: 0;
 }
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Section styling */
+section {
+    padding: 20px;
+    margin: 20px 0;
+}
+
+
+
+/* Gallery styling for projects */
+.project-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; /* Center and space project boxes */
+    margin: 0 auto;
+    max-width: 1200px; /* Limit max width for better layout on larger screens */
+}
+
+.project-box {
+    background-color: #333; /* Darker background for each project box */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px; /* Rounded corners */
+    width: 30%; /* Three boxes per row on larger screens */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add subtle shadow */
+    text-align: center;
+}
+
+.project-box h3 {
+    color: #ff69b4; /* Pink project titles */
+}
+
+.project-box a {
+    color: #3ae3ec; /* Bright blue links */
+    text-decoration: none;
+    display: block;
+    margin: 5px 0; /* Space out the links */
+}
+
+.project-box a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+    .project-box {
+        width: 80%; /* Stack boxes on smaller screens */
+    }
+}
+
+/* General project box styling */
+.project-box {
+    position: relative; /* Needed to position the sparkle */
+    background-color: #333; /* Darker background for each project box */
+    margin: 10px;
+    padding: 20px;
+    border-radius: 10px;
+    width: 30%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Sparkle effect on hover */
+.project-box:hover::before {
+    content: '';
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 10px;
+    height: 10px;
+    background-color: #ff69b4; /* Pink sparkle color */
+    border-radius: 50%;
+    box-shadow: 0 0 10px 2px #ff69b4, 0 0 20px 5px #ff69b4;
+    animation: sparkle 1s infinite;
+}
+
+/* Sparkle animation keyframes */
+@keyframes sparkle {
+    0% {
+        opacity: 0;
+        transform: scale(0);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.5);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(0);
+    }
+}
+
 

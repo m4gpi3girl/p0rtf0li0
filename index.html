@@ -1,86 +1,76 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width-device-width, 
-initial-scale=1.0">
-	<title>Portfolio Page</title>
-	<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Portfolio Page</title>
 </head>
 
 <body>
-	<header>
-		<h1>Portfolio</h1>
-	</header>
-	<section>
-		<h2>About Me</h2>
-		<p>Welcome to my portfolio page! I am a keen data 
-analyst and researcher, and as a budding web developer I decided to 
-make my portfolio from scratch. Please bear this in mind - this page 
-is in early development</p>
-	</section>
-	<section>
-		<h2>Summary of Skills/Experience</h2>
-		<h3>Research</h3>
-		<p>add here</p>
-		<h3>Data</h3>
-		<p>add here<p>
-		<h3>Other</h3>
-		<p>add here </p>
-	</section>
-	<section>
-		<h2>Projects - Work</h2>
-		<h3>EPC Analysis of Warm Welcome Spaces</h3>
-		<p>Warm Welcome is a scheme run by the Good Faith 
-Partnership. It partners with a variety of public spaces to provide a 
-'warm' and 'welcome' environment, promoting community belonging and 
-connection. With ongoing and future proposals regarding energy 
-requirements/net zero targets, energy efficiency, and the measure of it, 
-has been a major theme in the charity sector within my experience. I 
-analysed the EPC data for the Warm Welcome spaces and created a 
-streamlit app to enable partners and stakeholders to interact 
-with and visualise the findings.</p>
+  <header>
+    <h1>Portfolio</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Me</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Welcome to my portfolio page! I am a keen data 
+		analyst and researcher, and as a budding web developer I decided to 
+		make my portfolio from scratch. Please bear this in mind - this page 
+		is in early development</p>
+  </section>
+  
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-gallery">
+      <div class="project-box">
+        <h3>EPC Analysis of Warm Welcome Spaces</h3>
+        <p>Warm Welcome is a scheme run by the Good Faith 
+			Partnership. It partners with a variety of public spaces to provide a 
+			'warm' and 'welcome' environment, promoting community belonging and 
+			connection. With ongoing and future proposals regarding energy 
+			requirements/net zero targets, energy efficiency, and the measure of it, 
+			has been a major theme in the charity sector within my experience. I 
+			analysed the EPC data for the Warm Welcome spaces and created a 
+			streamlit app to enable partners and stakeholders to interact 
+			with and visualise the findings.</p>
+        <a href="https://warmwelcomespaces.streamlit.app">Streamlit app</a>
+        <a href="https://www.warmwelcome.uk">Warm Welcome</a>
+		<a href="https://github.com/m4gpi3girl/warm-welcome-st-app">Code</a>
+      </div>
+      
+      <div class="project-box">
+        <h3>Cost Calculator</h3>
+        <p>Created a cost calculator on CodePen for stakeholders to use to save time and reduce the need for them to request the information from the data team.</p>
+        <a href="https://codepen.io/m4gpi3girl/pen/GRYdEvL">Code/App</a>
+      </div>
+      
+      <div class="project-box">
+        <h3>Scavenger Hunt App</h3>
+        <p>Developed a Streamlit app for a friends birthday scavenger hunt with a 2-day deadline, to much praise from participants.</p>
+        <a href="https://github.com/m4gpi3girl/reese_hunt_2024">Code</a>
+      </div>
+    </div>
+  </section>
 
-		<a href="https://warmwelcomespaces.streamlit.app">Link to 
-the streamlit app<a/>
-		<a href="https://www.warmwelcome.uk">About Warm 
-Welcome</a>
+  <div class="project-box">
+	<h3>Scavenger Hunt App</h3>
+	<p>Developed a Streamlit app for a friends birthday scavenger hunt with a 2-day deadline, to much praise from participants.</p>
+	<a href="https://github.com/m4gpi3girl/reese_hunt_2024">Code</a>
+  </div>
+</div>
+</section>
 
-
-		<h3>Cost Calculator</h3>
-		<p>Part of the assessment of grantees involved calculating 
-the value for money of each project, involving various metrics about the 
-project. Often I would recieve ad-hoc requests for the figure from 
-internal and external stakeholders. At the time I was working on my web 
-development skills and created a cost calculator on CodePen. I gave the 
-link to external grant managers to save time and allow them to use it at 
-their convenience.</p>
-	<a href="https://codepen.io/m4gpi3girl/pen/GRYdEvL">Cost 
-Calculator</a>
-
-	</section>
-	<section>
-		<h2>Projects - Non Work</h2>
-		<h3>Scavenger Hunt App</h3>
-		<p>Someone I knew had made an instagram story about how 
-much time and difficulty they had experienced in planning their annual 
-birthday 'scavenger hunt'. At the time, I was creating Streamlit apps both 
-to develop my personal skills and to test for use within the grants and 
-loans teams. I got in touch with this person and ended up making them a 
-Streamlit app for their hunt. It was a huge success as a last minute 
-solution (it was 2 days from the scheduled hunt) and I recieved many 
-compliments for attendees!</p>
-
-		<a 
-href="https://github.com/m4gpi3girl/reese_hunt_2024">See the code 
-here</a>
-		<p>projects here</p>
-	</section>
-
-	<section>
-	<h2>Examples of Tasks Completed</h2>
-	<p>text</p>
-	</section>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: elzissman@gmail.com</p>
+  </section>
 </body>
 </html>
-
